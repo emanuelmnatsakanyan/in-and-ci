@@ -11,7 +11,7 @@ const config = {
     },
     resolve: {
         fallback: {
-            "stream": false,
+            "stream": require.resolve("stream-browserify"),
             "buffer": require.resolve("buffer/")
         }
     },
