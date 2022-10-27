@@ -1,6 +1,7 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-      "indentation": 4
-    }
-  }
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 4
+  },
+  "ignore": ["length-zero-no-unit", "no-missing-end-of-source-newline"]
+}
