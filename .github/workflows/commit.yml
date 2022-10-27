@@ -1,0 +1,15 @@
+name: Commit
+
+on: [commit]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          npm run build 
+          npm run lint:js 
+          npm run lint:css
+        
