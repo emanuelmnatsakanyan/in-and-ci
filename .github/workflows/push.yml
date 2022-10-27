@@ -1,8 +1,8 @@
 name: Push
 
 on: 
-  push:
-    branches: [infrastructure-and-ci]
+  pull-request:
+    branches: [master]
 
 
 jobs:
